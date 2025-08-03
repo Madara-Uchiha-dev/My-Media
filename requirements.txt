@@ -1,0 +1,2 @@
+chardet
+yt-dlp
