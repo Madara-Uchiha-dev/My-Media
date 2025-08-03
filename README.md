@@ -19,7 +19,10 @@ A powerful Python tool for downloading and processing high-quality audio from Yo
 ### Prerequisites
 
 1. **Python 3.8+** - [Download Python](https://www.python.org/downloads/)
-2. **FFmpeg** - Required for audio processing:
+2. **Requirement Package**
+   ```bash
+    pip install -r requirements.txt
+4. **FFmpeg** - Required for audio processing:
    ```bash
    # Ubuntu/Debian
    sudo apt install ffmpeg
@@ -29,3 +32,5 @@ A powerful Python tool for downloading and processing high-quality audio from Yo
 
    # Windows (via Chocolatey)
    choco install ffmpeg
+
+**Full Changelog**: https://github.com/Madara-Uchiha-dev/My-Media/commits/Madara
