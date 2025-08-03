@@ -1,109 +1,32 @@
-# 🎧 My-File-Trimer
+# 🎧 YouTube Premium Audio Toolkit
 
-**Trim, convert, and extract audio segments** from your `.mp3`, `.m4a`, or `.webm` files with precision. This lightweight tool uses `ffmpeg` to slice specific time ranges from your media into `.mp3`, `.wav`, or `.m4a` files — all controlled via a simple CSV.
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![FFmpeg Required](https://img.shields.io/badge/requires-FFmpeg-orange)](https://ffmpeg.org/)
 
----
+A powerful Python tool for downloading and processing high-quality audio from YouTube with SEO-friendly filenames, precise segment extraction, and batch processing capabilities.
 
-## 🚀 Features
+## 🌟 Key Features
 
-- 🔥 Supports `.mp3`, `.m4a`, `.webm` input formats
-- 🎯 Precise segment extraction based on time ranges
-- 📁 Output in `.mp3` (default), or `.wav` / `.m4a` via flag
-- 🕒 Accepts multiple time formats:
-  - `SS`, `MM:SS`, `HH:MM:SS`, `HH:MM:SS.sss`
-- 📝 CSV-controlled batch processing
-- 💡 No need for headers
+- **High-Quality Audio Extraction** - Download Opus/AAC audio at best available quality
+- **Precision Audio Editing** - Extract exact segments with sample-accurate trimming
+- **SEO-Optimized Filenames** - Automatic conversion to search-friendly filenames
+- **Batch Processing** - Handle multiple URLs and segments via CSV
+- **Smart CSV Detection** - Auto-recognizes start/end/name columns
+- **Format Conversion** - Output to MP3, M4A, or WAV with configurable bitrate
 
----
+## 📥 Installation
 
-## 📦 Setup Guide
+### Prerequisites
 
-### 1. Clone the repo
+1. **Python 3.8+** - [Download Python](https://www.python.org/downloads/)
+2. **FFmpeg** - Required for audio processing:
+   ```bash
+   # Ubuntu/Debian
+   sudo apt install ffmpeg
 
-```bash
-git clone https://github.com/your-username/My-File-Trimer.git
-cd My-File-Trimer
-2. Create a virtual environment
-bash
-Copy
-Edit
-python -m venv myenv
-Activate it:
-Windows
+   # macOS (via Homebrew)
+   brew install ffmpeg
 
-bash
-Copy
-Edit
-.\myenv\Scripts\activate
-Linux/macOS
-
-bash
-Copy
-Edit
-source myenv/bin/activate
-3. Install dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-🛠️ Install ffmpeg
-Ubuntu/Debian
-bash
-Copy
-Edit
-sudo apt update && sudo apt install ffmpeg
-macOS (with Homebrew)
-bash
-Copy
-Edit
-brew install ffmpeg
-Windows (with Chocolatey)
-bash
-Copy
-Edit
-choco install ffmpeg
-📑 CSV Format (No Header Required)
-sql
-Copy
-Edit
-start,end,"Name of file"
-00:30,01:15,"Intro Music"
-01:20,02:00,"Verse 1"
-Use "" around file names if they contain spaces.
-
-Flexible time formats supported: SS, MM:SS, HH:MM:SS, HH:MM:SS.sss
-
-⚙️ Usage
-Basic Command
-bash
-Copy
-Edit
-python extract_audio.py songs.mp4 segments.csv --no-header --name-col 2 --start-col 0 --end-col 1
-Arguments Breakdown:
-Argument	Description
-songs.mp4	Input video/audio file (.webm, .mp4, .mp3, etc.)
-segments.csv	CSV file defining start/end times and output names
---no-header	CSV has no header row
---name-col 2	Output name is in the 3rd column (0-indexed)
---start-col 0	Start times are in the 1st column
---end-col 1	End times are in the 2nd column
-
-Change Output Format (e.g. WAV, M4A)
-bash
-Copy
-Edit
-python extract_audio.py songs.mp4 segments.csv --no-header --name-col 2 -f wav
-Change Output Directory
-bash
-Copy
-Edit
-python extract_audio.py songs.mp4 segments.csv -o ./my_audio --no-header --name-col 2
-💡 Pro Tips
-Filenames are sanitized automatically.
-
-Output defaults to the current directory if not specified.
-
-Can handle long videos and large segment lists.
-
-📜 License
-Uchiha License — use freely, contribute kindly. ❤️
+   # Windows (via Chocolatey)
+   choco install ffmpeg
