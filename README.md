@@ -1,7 +1,6 @@
 # 🎧 YouTube Premium Audio Toolkit
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![FFmpeg Required](https://img.shields.io/badge/requires-FFmpeg-orange)](https://ffmpeg.org/)
 
 A powerful Python tool for downloading and processing high-quality audio from YouTube with SEO-friendly filenames, precise segment extraction, and batch processing capabilities.
