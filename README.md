@@ -33,4 +33,7 @@ A powerful Python tool for downloading and processing high-quality audio from Yo
    # Windows (via Chocolatey)
    choco install ffmpeg
 
+
 **Full Changelog**: https://github.com/Madara-Uchiha-dev/My-Media/commits/Madara
+### License
+[![LICENSE](https://img.shields.io/github/license/Madara-Uchiha-dev/My-Media?label=license&style=for-the-badge)](LICENSE)
