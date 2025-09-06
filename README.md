@@ -37,3 +37,10 @@ A powerful Python tool for downloading and processing high-quality audio from Yo
 **Full Changelog**: https://github.com/Madara-Uchiha-dev/My-Media/commits/Madara
 ### License
 [![LICENSE](https://img.shields.io/github/license/Madara-Uchiha-dev/My-Media?label=license&style=for-the-badge)](LICENSE)
+## Donate please
+### Bitcoin Wallet
+```
+bc1qjgemh9nf73mhghqshsghepv0y0622g2fdgdx74
+```
+<img width="200" height="200" alt="bc1qjgemh9nf73mhghqshsghepv0y0622g2fdgdx74" src="https://github.com/user-attachments/assets/8b5fb340-6fed-4b76-abbc-5751eb4e4674" />
+
